@@ -1,6 +1,6 @@
 # tic-tac-toe-reinforcement-learning
 
-This project contains a simple tic-tac-toe game implementation with classical settings (3x3 board with player X and O etc.). 
+This project contains implementations of various reinforcement learning agents learning to play tic-tac-toe using a game implementation with classical settings (3x3 board with player X and O etc.). 
 
 I wanted to keep the game implementation as simple as possible and tried to concentrate more on the agents. There are surely places of improvements at how to represent the game and the play (I made some thoughts about base 3 number representation, or as binary numbers etc.), but I stayed at the 3x3 matrix representation with "enum" values. I implemented SARSA and Q-learning and other (mostly variants of random) agents as test opponents. I tried to run many experiments (mostly 1500 episodes with 1000 game in each). I trained both a Sarsa agent and a Q-learning agent (with reward scheme win=1, draw=0, loss=-1) against a simple random agent, then against a win blocking random agent, then against themselves and then against each other.
 
